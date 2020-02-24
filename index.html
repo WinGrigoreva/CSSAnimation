@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Mikki</title>
+    <link href="mikki.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+        }
+        .content{display: none;}
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="square">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>    
+    <div class="content">
+        <div class="circle head"></div>
+        <div class="circle ear left"></div>
+        <div class="circle ear right"></div>
+        <div class="elipse roth right"></div>
+        <div class="elipse roth left"></div>
+        <div class="elipse eye right"></div>
+        <div class="elipse eye left"></div>
+        <div class="chin"></div>
+        <div class="elipse mouth">
+            <div class="elipse tongue right"></div>
+            <div class="elipse tongue left"></div>
+        </div>
+        <div class="elipse mouthup"></div>
+        <div class="elipse oko left">
+            <div class="elipse pupil left"></div>
+        </div>
+        <div class="elipse oko right">
+            <div class="elipse pupil right"></div>
+        </div>
+        <div class="okocontainer">
+            <div class="elipse okocloseup"></div>
+            <div class="elipse okoclosedown"></div>
+        </div>
+        <div class="elipse arc noseup">
+            <div class="elipse nose"></div>
+        </div>
+        <div class="elipse arc skula right"></div>
+        <div class="elipse arc skula left"></div>
+    </div>
+    <script>
+            var p = document.getElementsByClassName("preloader")[0];
+            var m = document.getElementsByClassName("content")[0];
+            var b = document.getElementsByTagName("body")[0];
+            
+            setTimeout(() => {
+                p.outerHTML=""; 
+                m.style.display = "flex";
+                 //b.style.display = "block";
+            }, 2000);
+    </script>
+</body>
+
+</html>
